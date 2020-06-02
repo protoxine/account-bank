@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div id="conteneur">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <select name="name_banque" id="name_banque">
+            <option value="chose_bank" selected>Choisi ta banque</option>
+            <option value="lcl">LCL</option>
+            <option value="caisse_epargne">Caisse d'épargne</option>
+            <option value="credit_agricole">Credit Agricole</option>
+            <option value="bnp_paribas">BNP Paribas</option>
+            <option value="cic">CIC</option>
+        </select>    
+        <div id="gain">
+            <h3>Entrer une somme gagné:</h3>
+            <button id="add_gain">+</button>
+            <button id="remove_gain">-</button>
+            <div id="laScrollBar_gain">
+                <div id="input_gain">
+                </div>
+            </div>
+        </div>
+        <div id="debit">
+            <h3>Entrer une somme debiter:</h3>
+            <button id="add_debit">+</button>
+            <button id="remove_debit">-</button>
+            <div id="laScrollBar_debit">
+                <div id="input_debit">
+                </div>
+            </div>
+        </div>
+    <button id="calculate">Calculer</button>
+        <div id="txt_somme">    
+    <p>Vous avez depenser <i id="somme_depenser"></i> euros !</p>
+    <p>Il vous reste <i id="somme_restante"></i> euros !</p>
+        </div>
+    </div>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="test.js"></script>
+    
+</body>
+</html>

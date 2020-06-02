@@ -1,0 +1,167 @@
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+#conteneur{
+    width: 20%;
+    top: 10px;
+    position: relative;
+    min-height: 95vh;
+    height: calc(100vh-2px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    left: calc(80%/2);
+}   #conteneur span{
+    position: absolute;
+    display: block;
+}
+
+h3{
+    text-align: center;
+}
+
+#gain{
+    height: calc(510px/2);
+}   #laScrollBar_gain{
+    overflow: auto;
+    height: 175px;
+}
+
+#debit{
+    height: calc((510px/2)-10px);
+}   #laScrollBar_debit{
+    overflow: auto;
+    height: 175px;
+}
+
+button{
+    border-radius: 25px;
+    margin: 5px;
+    border: 1px;
+    background-color: rgb(131, 130, 130);
+    cursor: pointer;
+}   button:focus{
+    outline: none;
+}
+
+#calculate{
+    position: relative;
+} #calculate:hover{
+    background-color:red;
+    transition: 0.3s;
+}
+
+input{
+    margin: 2px;
+} #input_gain, #input_debit{
+    display: flex;
+    flex-direction: column;
+}
+
+#add_gain:hover{
+    background-color:red;
+}   #add_gain #add_debit{
+    left: 20px;
+}
+
+.caisse_epargne:focus{
+    background-color: red;
+}   .lcl{
+    background-image: url();
+}   .creditAgricole{
+    background-image: url();
+}   .bnp{
+    background-image: url();
+}   .cic{
+    background-image: url();
+}
+
+select{
+    cursor: pointer;
+}
+
+#txt_somme p{
+    margin: 1px
+} 
+
+input[type=number], select {
+    text-align: center;
+    text-align-last: center;
+  }
+
+#conteneur span:nth-child(1){
+	top: 0%;
+	left: 100%;
+	width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f40303);
+    animation: animate1 2s linear infinite;
+}   @keyframes animate1{
+    0%
+    {
+        left: -100%;
+    }
+    50%,100%
+    {
+        left: 100%;
+    }
+}
+
+ #conteneur span:nth-child(2){
+        top: 100%;
+        right: 0%;
+        width: 2px;
+        height: 50%;
+        background: linear-gradient(180deg, transparent, #ff0707);
+        animation: animate2 2s linear infinite;
+    }   @keyframes animate2{
+		0%
+		{
+			top: -100%;
+		}
+		50%,100%
+		{
+			top: 100%;
+		}
+    }
+#conteneur span:nth-child(3){
+        bottom: 0%;
+        right: 100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #ff0707);
+        animation: animate3 2s linear infinite;
+    }   @keyframes animate3{
+		0%
+		{
+			right: -100%;
+		}
+		50%,100%
+		{
+	right: 100%;
+		}
+    }
+#conteneur span:nth-child(4){
+        bottom: -100%;
+        left: 0%;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #ff0707);
+        animation: animate4 2s linear infinite;
+    }   @keyframes animate4{
+		0%
+		{
+			bottom: -100%;
+		}
+		50%,100%
+		{
+			bottom: 100%;
+		}
+	}
